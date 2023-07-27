@@ -108,5 +108,5 @@ console.log(Object.keys(tinderUser2)); //it will return all the keys of that obj
 
 console.log(Object.values(tinderUser2)); //it will return all the values of that key of an object in the form of array  
 
-console.log(Object.entries(tinderUser2)); //it will return all the key value pair in a seperate array within a array 
+console.log(Object.entries(tinderUser2)); //it will return all the key value pair in a seperate array within a array
 
