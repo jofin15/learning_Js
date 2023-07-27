@@ -1,8 +1,9 @@
-//singleton
+// you can declare objects with two form singleton and object literals
 
 const mySym=Symbol("Key1")
 // console.log(typeof mySym);
-//object literals 
+
+//Using object literals 
 const JsUser={
     name:"jofin",
     "full-name":"jofin johnson",
