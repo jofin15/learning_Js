@@ -32,8 +32,8 @@ console.log( typeof newArra);
 //slice and splice oepration
 
 //slice
-console.log("A ",myArr);
 const myA1=myArr.slice(1,3) //this will print the value of index 1 and index 2 (exclude index 0 and index 3) 
+console.log("A ",myArr);
 console.log(myA1);
 
 console.log("B ", myArr);

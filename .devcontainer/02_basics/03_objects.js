@@ -1,4 +1,4 @@
-// you can declare objects with two form singleton and object literals
+// you can declare objects in two form singleton and object literals
 
 const mySym=Symbol("Key1")
 // console.log(typeof mySym);
@@ -23,7 +23,7 @@ const JsUser={
 // console.log(JsUser["email"]);
 
 
-//both are right but it is preferred to used the second method . Because
+//both are right but it is preferred to used the second method [square bracket] . Because
 
 // console.log(JsUser["full-name"]); //here if you see when you try to enter fullname with using first method to access object elements, ide will automatically convert those synatax into the second method
 

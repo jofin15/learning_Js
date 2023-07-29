@@ -18,7 +18,9 @@ console.log(newM);
 const anotherArray=[1,2,3,[4,5,6],7,[8,[9,0]]]
 //and you want to make a new array which flat or make all element seperated then use flat method
 
-const real_another_array=anotherArray.flat(Infinity);
+
+const real_another_array=anotherArray.flat(Infinity); 
+//flat(depth)
 console.log(real_another_array);
 
 //check whether the given variable is an array or not
