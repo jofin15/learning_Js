@@ -3,7 +3,7 @@
 // console.log(a+b);
 // }
 
-// addTwoNumber(23,14) //vaues which are inside the bracket ->argumenets
+// addTwoNumber(23,14) //vaues which are inside the bracket. The value that you pass->argumenets
 // addTwoNumber(23,"14")
 // addTwoNumber("23",14);
 // addTwoNumber(23,null)

@@ -3,7 +3,7 @@ const user={
     price:999,
 
     welcomeMessage:function(){
-        //This is used to refer the current context. Any value which is inside that object can be accessed using "this" keyword
+        //"This" is used to refer the current context. Any value which is inside that object can be accessed using "this" keyword
         // console.log(`${this.username},welcome `);
         // console.log(this); // it will print the current context of the object
     }
