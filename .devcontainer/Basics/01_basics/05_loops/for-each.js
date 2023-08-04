@@ -24,8 +24,6 @@
 // })
 
 
-
-
 // const myCoding=[
 //     {
 //         name:"jofin",
