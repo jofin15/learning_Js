@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Js</li>
+    </ul>
+</body>
+<script>
+    //this function is less optimized, because we are using innerHTML. 
+    function addLanguage(langName){
+        const li=document.createElement("li")
+        li.innerHTML=`${langName}`
+        document.querySelector(".language").appendChild(li)
+        
+    }
+    addLanguage("py")
+    addLanguage("ty")
+
+
+    //this function is much optimized. because we are not traversing like above , simply creating textNode and appending it
+    function addOptiLanguage(langName){
+        const li=document.createElement("li")
+        const addText=document.createTextNode(langName)
+        li.appendChild(addText)
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addOptiLanguage("c++")
+
+
+    //edit
+    const secondLang=document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML="java"
+
+
+    //remove
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
