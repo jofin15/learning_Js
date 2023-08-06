@@ -1,0 +1,65 @@
+Basic Dom Operation 
+1. document.getElementById("title")
+2.  document.getElementById("title").id
+3. document.getElementById("title").className
+4. document.getElementById("title").getAttribute("id")
+
+//if you want to change the class of the attribute 
+document.getElementById("title").setAttribute("class","test")
+
+//if you want to apply stype on the static html
+const title=document.getElementById("title")
+title.style.backgroundColor="red"
+title.style.padding="20"
+
+
+//if you want to retrive values
+1. title.innerText 
+2. title.textContent
+3. title.innerHTML
+
+difference between innerText and textContent
+if you apply span and give a class propertyf of display as none
+innerText will apply the class propertyf
+
+but textContent will ignore the class
+
+innerHTML:- will reflect not only the values or content but it will also shows the 
+attributes as well 
+
+
+//query selector
+1. document.querySelector("h1")
+2. document.querySelector("#title")  // for accessing title 
+3. document.querySelector(".nigga") //for accessing class
+4. document.querySelector("ul")
+5. document.querySelector("li")
+or
+6. const target=document.querySelector("li") //by default it will only select the first li out of the 5
+target.style.backgroundColor="red"
+target.innerText //retrive the values
+target.innerText="jofin" //change the value 
+
+
+
+// querySelectorAll
+1. const tempList=document.querySelectorAll("li")
+tempList
+tempList[1].style.color="green"
+tempList.forEach((item)=>item.style.color="green")
+
+
+note:-while selecting querySelectorAll all the elements will be stored in nodeList (it is similar to array, but not completely array)
+note:- nodeList and HTMLCollector are both different
+note:- since in HTMLCollector we dont have any default proporty to loop example forEach or map,
+so we will first convert that into Array 
+
+// getElementsByClassName
+1. document.getElementsByClassName("list-item")
+2. const tempClassList=document.getElementsByClassName("list-item") //the object will be stored in HTMLCollector
+3. const random=Array.from(tempClassList) //convert into array
+4. random.map((item)=>(item.style.color="green"))
+
+
+
+

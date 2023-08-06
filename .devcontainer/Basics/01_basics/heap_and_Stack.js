@@ -21,3 +21,4 @@ console.log(user2);
 Whenever you store anything on the stack you get the copy of that 
 But Whenever you store anything on the heap you will get the reference of it 
 */
+
