@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Jofin</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    //this function execute the given handler(function) after every 2 sec interval
+
+   // setInterval(function(){
+   //     console.log("joshnon")
+   // },2000)
+
+       //this function execute the given handler(function) after 2 sec or any described time
+      // setTimeout(function(){
+      //  console.log("jofin")
+   // },2000)
+
+    //or
+
+    //const jofin=function(){
+   //     console.log("hello jofin")
+   // }
+
+    //just paste the function reference without paranthesis
+   // setTimeout(jofin,2000)
+
+    
+
+   //manupilating DOM using set interval or set time out 
+
+       // const change=function(){
+         //   document.querySelector("h1").innerHTML=`<span>hello jomin</span>`
+        //}
+
+        //setTimeout(change,3000)
+
+
+
+        //if you want to stop that event to occur before its given time 
+        const change=function(){
+           document.querySelector("h1").innerHTML=`<span>hello jomin</span>`
+            
+        }
+        const changeMe=setTimeout(change,3000)
+
+       document.querySelector("#stop").addEventListener("click",function(){
+            clearTimeout(changeMe)
+            console.log("stopped")
+       })
+
+</script>
+</html>
