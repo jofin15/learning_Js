@@ -132,13 +132,63 @@
 
 
 //directly using fetch and then and catch method
-fetch("https://jsonplaceholder.typicode.com/users")
-.then((response)=>{
-    return response.json()
-})
-.then((data)=>{
-console.log(data)
-})
-.catch((error)=>{
-console.log("something went wrong")
-})
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>{
+//     return response.json()
+// })
+// .then((data)=>{
+// console.log(data)
+// })
+// .catch((error)=>{
+// console.log("something went wrong")
+// })
+
+
+//combining both promise , asyn , await and fetch 
+// const newPromise=new Promise((resolve,reject)=>{
+//     console.log("your data is getting requested")
+
+//     setTimeout(() => {
+//         async function fetchData(){
+//             try {   
+//                 const response=await fetch("https://jsonplaceholder.typicode.com/users")
+//                 const data=await response.json()
+//                 resolve(data)
+//                 }
+//              catch (error) {
+//                 reject(error)
+//                 console.log("data is not there");
+//             }
+//         }
+//         fetchData()  
+
+
+//     }, 3000);
+  
+// })
+
+
+// newPromise.then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{
+// console.log(error);
+// })
+
+
+//more shorter effective and cleaner of the above code
+// async function fetchData() {
+//     try {
+//       const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//       if (!response.ok) {
+//         throw new Error("Network response was not ok");
+//       }
+//       const data = await response.json();
+//       console.log(data);
+//     } catch (error) {
+//       console.error("Fetch error:", error);
+//     }
+//   }
+  
+//   fetchData();
+  

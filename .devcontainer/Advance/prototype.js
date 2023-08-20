@@ -58,7 +58,7 @@ The new object is returned: After the constructor function has been called, if i
 //     jofin:"genius",
 //     newMembers:function(){
 //         console.log(`he is ${this.jofin}`);
-//     }
+ //     }
 // }
 
 // Object.prototype.jomin=function () {
