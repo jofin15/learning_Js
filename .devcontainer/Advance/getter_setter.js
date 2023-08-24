@@ -44,6 +44,7 @@ function User(email,password) {
 
 const tea=new User("jofin@gmail.com",123)
 console.log(tea.email);
+
 //using setter and getter method on objects
 // const User={
 //     _email:"jofin@gmail.com",

@@ -23,12 +23,12 @@ const debitCard=true;
 const loginFromGoogle=true;
 const loginFromFacebook=false;
 
-//in and operator even if one of the variable  is false ,the statement will never get executed
+//in AND operator even if one of the variable  is false ,the statement will never get executed
 if(userLoggedIn && debitCard & 2!=2){
     console.log("executed");
 }
 
-//in or operator if any of the variable is true, the whole statement will get executed
+//in OR operator if any of the variable is true, the whole statement will get executed
 if (loginFromGoogle || loginFromFacebook){
     console.log("executed 2");
 }  

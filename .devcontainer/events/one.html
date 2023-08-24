@@ -26,26 +26,61 @@
      // attachEvent()
     // jQuery - on
 
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+        //all the events that one need to know 
+    //1. type, timpestamp, preventDefault
+    //2. target, toElement, srcElement, currentTarget
+    //3. clientX, clientY, screenX, screenY
+    //4. altkey, ctrlkey, shiftkey, keycode
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
-    
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
+
+//event propogation
+    //Propagation refers to how events travel through the Document Object Model (DOM) tree. The DOM tree is the structure which contains parent/child/sibling elements in relation to each other. You can think of propagation as electricity running through a wire, until it reaches its destination.
+
+    //1. event bubbling
+    //inside to outside, lower to higher, smaller to bigger, image to ul
+//    document.getElementById("images").addEventListener("click",function(e){
+//        console.log("click inside the ul")
+ //   },false);
+
+//    document.getElementById("owl").addEventListener("click",function(){
+//        console.log("clcik inside the owl")
+//    },false);
+
+
+
+
+// 2. capturing mode
+ //outside to inside, higher to lower, bigger to smaller , ul to image
+// document.getElementById("images").addEventListener("click",function(){
+ //   console.log("click inside the ul")
+//},true);
+
+ // document.getElementById("owl").addEventListener("click",function(e){
+ //      console.log("clcik inside the owl")
+     
+  // },true);
+
+
+// document.getElementById("images").addEventListener("click",function(){
+  //  console.log("click inside the ul")
+////},false);
+
+//   document.getElementById("owl").addEventListener("click",function(e){
+ //   console.log("clcik inside the owl")
+ //  e.stopPropagation() // this is will stop getting floated
+  
+//},false);
+
+
+
+//document.getElementById("google").addEventListener("click",function(e){
+ //   e.preventDefault();
+ //   e.stopPropagation()
+  //  console.log("google clicked")
+
+//},false)
+
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);

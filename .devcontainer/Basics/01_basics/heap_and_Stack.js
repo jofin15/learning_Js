@@ -15,7 +15,7 @@ let user1={
 let user2=user1;
 user2.name="jomin"
 console.log(user2);
-
+console.log(user1);
 
 /*Note:-
 Whenever you store anything on the stack you get the copy of that 
